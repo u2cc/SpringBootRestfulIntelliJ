@@ -49,12 +49,21 @@
             <scope>compile</scope>
         </dependency>
 
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+            <scope>compile</scope>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.solace.spring.boot/solace-java-spring-boot-starter -->
         <dependency>
             <groupId>com.solace.spring.boot</groupId>
-            <artifactId>solace-java-spring-boot-starter</artifactId>
-            <version>4.1.0</version>
+            <artifactId>solace-jms-spring-boot-starter</artifactId>
+            <version>1.0.0</version>
         </dependency>
+
+
 
         <dependency>
             <groupId>javax.jms</groupId>

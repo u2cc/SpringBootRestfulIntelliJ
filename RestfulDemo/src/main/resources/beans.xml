@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="solaceJndiTemplate" class="org.springframework.jndi.JndiTemplate"
+
+          lazy-init="default" autowire="default">
+        <property name="environment">
+            <map>
+                <entry key="java.naming.provider.url" value="${java.naming.provider.url.soloace}" />
+                <entry key="java.naming.factory.initial" value="${java.naming.factory.initial.solace}" />
+                <entry key="java.naming.security.principal" value="${solace.broker.username}" />
+                <entry key="java.naming.security.credentials" value="${solace.password}" />
+                <entry key="Solace_JMS_SSL_ValidateCertificate" value="${Solace_JMS_SSL_ValidateCertificate}" />
+                <entry key="Solace_JMS_JNDI_ConnectRetries" value="${Solace_JMS_JNDI_ConnectRetries}" />
+                <entry key="Solace_JMS_JNDI_ConnectTimeout" value="${Solace_JMS_JNDI_ConnectTimeout}" />
+                <entry key="Solace_JMS_JNDI_ReconnectRetryWait" value="${Solace_JMS_JNDI_ReconnectRetryWait}" />
+                <entry key="Solace_JMS_JNDI_ReconnectRetries" value="${Solace_JMS_JNDI_ReconnectRetries}" />
+            </map>
+        </property>
+    </bean>
+</beans>
