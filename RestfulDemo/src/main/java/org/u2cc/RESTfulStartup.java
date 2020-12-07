@@ -1,4 +1,4 @@
-package org.u2cc.rest;
+package org.u2cc;
 
 
 import org.springframework.boot.SpringApplication;
