@@ -23,7 +23,7 @@
             A Spring Boot application's main class is a class that contains a public static void main() method that starts up the Spring ApplicationContext. By default, if the main class isn't explicitly specified, Spring will search for one in the classpath at compile time and fail to start if none or multiple of them are found.
             https://www.baeldung.com/spring-boot-main-class
         !-->
-        <start-class>org.u2cc.rest.RESTfulStartup</start-class>
+        <start-class>org.u2cc.RESTfulStartup</start-class>
     </properties>
 
     <dependencies>
